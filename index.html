@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+<!-- Libs -->
+    <script src="node_modules/chart.js/chart.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="ressources/style.css"></link>
+<!-- src -->
+    <script src="src/main.js" charset="utf-8"></script>
+    <script src="src/chart.js" charset="utf-8"></script>
+  </head>
+
+  <body ng-style="{'background-color': chartCtr.background,
+                   'color': chartCtr.textColor}"
+        ng-controller="ChartController as chartCtr" >
+        <h1 class="header">{{chartCtr.header}}</h1>
+        <div class="center">
+          <div class="row">
+            <canvas class="col-md-5 col-md-offset-3" id="myChart" width="800" height="800"></canvas>
+            <div class="col-md-4" id="legend"></div>
+          </div>
+        </div>
+  </body>
+</html>
