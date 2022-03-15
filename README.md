@@ -63,7 +63,7 @@ https://keybase.io/tjolk
 
 Consider the [keybase command line program](https://keybase.io/download).
 
-```bash
+```json
 # look me up
 keybase id tjolk
 ```
